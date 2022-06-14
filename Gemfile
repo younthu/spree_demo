@@ -42,6 +42,17 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem 'spree' # core and API
+  gem 'spree_backend' # Rails admin panel (optional)
+  gem 'spree_emails' # transactional emails (optional)
+  gem 'spree_sample' # dummy data like products, taxons, etc
+  gem 'spree_auth_devise', '~> 4.3' # Devise integration (optional)
+  gem 'spree_gateway', '~> 3.9' # payment gateways eg. Stripe, Braintree (optional)
+  gem 'spree_i18n', '~> 5.0' # translation files (optional)
+
+  # only needed for MacOS and Ruby 3.0
+  gem 'sassc', github: 'sass/sassc-ruby', branch: 'master'
 end
 
 group :test do
